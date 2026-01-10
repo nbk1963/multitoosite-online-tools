@@ -1,178 +1,344 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Multitool – Free Online Tools</title>
-    <style>
-        body {
-            font-family: "Poppins", sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #BA1E3D;
-            color: #fff;
-        }
-        header {
-            backdrop-filter: blur(18px);
-            background: rgba(186, 30, 61, 0.35);
-            padding: 16px 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            transition: background 0.3s ease;
-        }
-        header h2 {
-            margin: 0;
-            font-size: 26px;
-            font-weight: 600;
-        }
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .hero h1 {
-            font-size: 42px;
-            font-weight: 700;
-        }
-        .tools-grid {
-            max-width: 1200px;
-            margin: auto;
-            padding: 40px 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-        .tool-card {
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(15px);
-            border-radius: 16px;
-            padding: 22px;
-            text-align: center;
-            transition: 0.3s;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
-            cursor: pointer;
-        }
-        .tool-card:hover {
-            transform: translateY(-6px);
-            background: rgba(255, 255, 255, 0.19);
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #cbd5e1;
-            border-top: 1px solid rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(12px);
-            background: rgba(255, 255, 255, 0.05);
-        }
-    @media (max-width: 600px) {
-        header h2 {
-            font-size: 20px;
-        }
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        .hero h1 {
-            font-size: 30px;
-        }
+<title>Superscript Generator – Convert Text to Superscript Online</title>
+<meta name="description" content="Free superscript generator to convert text into superscript letters and numbers instantly. No signup, no ads.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.multitoosite.com/superscript-generator.html">
 
-        .tools-grid {
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: 15px;
-            padding: 25px 15px;
-        }
+<!-- Google Verification -->
+<meta name="google-site-verification" content="hJ-1dMee83nG2XDHpEZBZUCnU-4yuoIWqv-VCePsMx8">
 
-        .tool-card {
-            padding: 16px;
-        }
-    }
+<!-- Favicon -->
+<link rel="icon" href="/favicon/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Superscript Generator – Convert Text Online">
+<meta property="og:description" content="Convert normal text into superscript characters instantly. Free and fast online superscript generator.">
+<meta property="og:url" content="https://www.multitoosite.com/superscript-generator.html">
+<meta property="og:site_name" content="MultiToolSite">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Superscript Generator">
+<meta name="twitter:description" content="Free online tool to convert text into superscript instantly.">
+
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9V4R43C5W6"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9V4R43C5W6');
+</script>
+
+<!-- Schema: SoftwareApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Superscript Generator",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "All",
+  "url": "https://www.multitoosite.com/superscript-generator.html",
+  "description": "Free online superscript generator to convert text into superscript characters instantly.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<style>
+body{
+  font-family:Inter,system-ui,Arial,sans-serif;
+  background:#ffffff;
+  color:#1f2937;
+  margin:0;
+  line-height:1.6;
+}
+
+.container{
+  max-width:760px;
+  margin:auto;
+  padding:24px;
+}
+
+h1{
+  font-size:2rem;
+  margin-bottom:8px;
+}
+
+p{
+  color:#4b5563;
+  margin-bottom:18px;
+}
+
+.tool-box{
+  background:#f9fafb;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:18px;
+}
+
+textarea{
+  width:100%;
+  min-height:110px;
+  padding:12px;
+  font-size:1rem;
+  border-radius:8px;
+  border:1px solid #d1d5db;
+  resize:vertical;
+}
+
+button{
+  margin:14px 0;
+  padding:10px 16px;
+  background:#2563eb;
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  font-size:1rem;
+  font-weight:600;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#1e40af;
+}
+
+.faq{
+  margin-top:40px;
+}
+
+.faq h2{
+  font-size:1.4rem;
+  margin-bottom:12px;
+}
+
+.faq h3{
+  font-size:1rem;
+  margin-top:16px;
+}
+
+.related-tools {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.related-tools h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.related-links a {
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #2563eb; /* blue */
+  font-weight: 500;
+}
+
+.related-links a:hover {
+  color: #1e40af; /* darker blue */
+  text-decoration: underline;
+}
+
+.about-section {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.about-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+}
+/* Footer policy links styling */
+.footer-links {
+  margin-top: 30px;              /* space from tools */
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+}
+
+/* Policy links color */
+.footer-links a {
+  font-size: 0.9rem;
+  color: #6b7280;                /* gray */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.footer-links a:hover {
+  color: #111827;                /* dark gray */
+  text-decoration: underline;
+}
+
+
 </style>
 </head>
+
 <body>
+<div class="container">
 
-<header>
-    <h2>Multitool</h2>
-</header>
+<h1>Superscript Generator</h1>
+<p>
+Convert normal text into <strong>superscript characters</strong> instantly.
+Perfect for math, chemistry, scientific writing, and social media formatting.
+</p>
 
-<section class="hero">
-    <h1>All-in-One Online Tools</h1>
-    <p>Your free toolbox for converters, generators, calculators & more.</p>
+<div class="tool-box">
+  <textarea id="inputText" placeholder="Enter text here..."></textarea>
+
+  <button onclick="convertText()">Convert to Superscript</button>
+
+  <textarea id="outputText" placeholder="Superscript output will appear here..." readonly></textarea>
+</div>
+</div> <!-- end of tool-box -->
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+  <h2>About This Superscript Generator</h2>
+  <p>
+    This <strong>Superscript Generator</strong> helps you convert normal text
+    into Unicode superscript characters instantly. It is commonly used for
+    mathematical expressions, chemistry formulas, academic writing, and
+    social media styling.
+  </p>
+
+  <p>
+    All text processing happens directly in your browser, ensuring speed,
+    privacy, and security. No data is stored or shared.
+  </p>
 </section>
 
-<section class="tools-grid">
+<!-- FAQ -->
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
 
-    <!-- IMAGE TOOLS -->
-    <div class="tool-card"><h3>Image Converter</h3></div>
-    <div class="tool-card"><h3>Image Compressor</h3></div>
-    <div class="tool-card"><h3>Image Resizer</h3></div>
-    <div class="tool-card"><h3>Image Cropper</h3></div>
-    <div class="tool-card"><h3>Image to Text (OCR)</h3></div>
-    <div class="tool-card"><h3>Image Rotator/Flipper</h3></div>
+  <h3>Is this superscript generator free?</h3>
+  <p>Yes. This tool is completely free and requires no signup.</p>
 
-    <!-- PDF & DOCUMENT TOOLS -->
-    <div class="tool-card"><h3>PDF to Word</h3></div>
-    <div class="tool-card"><h3>Word to PDF</h3></div>
-    <div class="tool-card"><h3>PDF Compressor</h3></div>
-    <div class="tool-card"><h3>PDF Merger & Splitter</h3></div>
-    <div class="tool-card"><h3>Document Converter</h3></div>
-    <div class="tool-card"><h3>PDF Lock/Unlock</h3></div>
-    <div class="tool-card"><h3>eSign PDF</h3></div>
+  <h3>Does it work on mobile?</h3>
+  <p>Yes. The superscript generator works on mobile, tablet, and desktop devices.</p>
 
-    <!-- CALCULATORS -->
-    <div class="tool-card"><h3>Scientific Calculator</h3></div>
-    <div class="tool-card"><h3>Age Calculator</h3></div>
-    <div class="tool-card"><h3>BMI Calculator</h3></div>
-    <div class="tool-card"><h3>Loan EMI Calculator</h3></div>
-    <div class="tool-card"><h3>GST Calculator</h3></div>
-    <div class="tool-card"><h3>Currency Converter</h3></div>
-
-    <!-- TEXT TOOLS -->
-    <div class="tool-card"><h3>Text Case Converter</h3></div>
-    <div class="tool-card"><h3>Word & Character Counter</h3></div>
-    <div class="tool-card"><h3>Remove Duplicate Lines</h3></div>
-    <div class="tool-card"><h3>Text Sorter</h3></div>
-    <div class="tool-card"><h3>Text Reverser</h3></div>
-    <div class="tool-card"><h3>Text Encryptor/Decryptor</h3></div>
-
-    <!-- DEVELOPER TOOLS -->
-    <div class="tool-card"><h3>HTML/CSS/JS Minifier</h3></div>
-    <div class="tool-card"><h3>JSON Formatter & Validator</h3></div>
-    <div class="tool-card"><h3>Base64 Encoder/Decoder</h3></div>
-    <div class="tool-card"><h3>URL Encoder/Decoder</h3></div>
-    <div class="tool-card"><h3>Regex Tester</h3></div>
-
-    <!-- COLOR TOOLS -->
-    <div class="tool-card"><h3>Color Picker & Converter</h3></div>
-    <div class="tool-card"><h3>Color Picker from Image</h3></div>
-    <div class="tool-card"><h3>HEX to RGB Converter</h3></div>
-    <div class="tool-card"><h3>Gradient Generator</h3></div>
-    <div class="tool-card"><h3>Contrast Checker</h3></div>
-    <div class="tool-card"><h3>Palette Generator</h3></div>
-    <div class="tool-card"><h3>Color Blindness Simulator</h3></div>
-
-    <!-- SEO TOOLS -->
-    <div class="tool-card"><h3>Keyword Density Checker</h3></div>
-    <div class="tool-card"><h3>Meta Tag Analyzer</h3></div>
-    <div class="tool-card"><h3>Word Counter</h3></div>
-
-    <!-- CODE & GENERATOR TOOLS -->
-    <div class="tool-card"><h3>QR Code Generator & Scanner</h3></div>
-    <div class="tool-card"><h3>Barcode Generator</h3></div>
-    <div class="tool-card"><h3>UUID Generator</h3></div>
-
-    <!-- UTILITY TOOLS -->
-    <div class="tool-card"><h3>Unit Converter</h3></div>
-    <div class="tool-card"><h3>Time Zone Converter</h3></div>
-    <div class="tool-card"><h3>Random Number Generator</h3></div>
-    <div class="tool-card"><h3>Password Generator</h3></div>
-
+  <h3>Is my text saved?</h3>
+  <p>No. All conversions happen locally in your browser for full privacy.</p>
 </section>
 
-<footer>
-    © 2025 Multitool — All Rights Reserved.
-</footer>
+<!-- RELATED TOOLS (ONLY LINKS – SAFE) -->
+<section class="related-tools">
+  <h3>Related Tools</h3>
+
+  <div class="related-links">
+    <a href="/subscript-generator.html">Subscript Generator</a>
+    <a href="/text-case-converter.html">Text Case Converter</a>
+    <a href="/word-character-counter.html"> Word character counter</a>
+   <a href="/remove-duplicate.html">Remove duplicate </a>
+   <a href="/text-sorter.html">Text sorter</a>
+    <a href="/text-reverser.html">Text reverser</a>
+   <a href="/text-encryptor.html">Text encryptor</a>
+   <a href="/image-converter.html">Image converter</a>
+  <a href="/image-compressor.html">Image compressor</a>
+   <a href="/image-resizer.html">Image resizer</a>
+  <a href="/image-cropper.html">Image cropper</a>
+  <a  href="/image-to-text.html">Image to text</a>
+   <a href="/image-rotator.html">Image rotator</a>
+  <a href="/PDF-to-Word.html">PDF to Word</a>
+  <a href="/word-to-pdf.html">Word to pdf</a>
+     <a href="/pdf-compressor.html">Pdf compressor</a>
+   <a  href="/pdf-merger.html">Pdf merger</a>
+   <a href="/document-converter.html">Document converter</a>
+  <a href="/pdf-lockunlock.html">Pdf lockunlock</a>
+  <a href="/esign-pdf.html">eSign pdf</a>
+   <a href="/scientific-calculator.html">Scientific calculator</a> 
+   <a href="/one-rep-max-calculator.html">One rep-max calculator</a>
+  <a href="/bmi-calculator.html">Bmi calculator</a>
+  <a href="/loan-emi-calculator.html">loan emi calculator</a>
+  <a href="/gst-calculator.html">Gst calculator</a> 
+  <a href="/currency-converter.html">Currency converter</a>
+  <a href="/html-css.html">Html TO css</a> 
+    <a href="/jason-formatter.html">Jason formatter</a> 
+  <a href="/base64.html">base64 converter</a> 
+  <a href="/url-encoder.html">Url encoder</a> 
+  <a href="/color-picker.html">Color picker</a>
+  <a href="/regex-tester.html">Regex tester</a>
+  <a href="/japanese-character-name-generator.html">Japanese character name generator</a>
+   <a href="/hex-to-rgb.html">Hex to Rgb</a> 
+  <a href="/gradient-generator.html">Gradient generator</a> 
+  <a href="/contrast-checker.html">Contrast checker</a> 
+  <a href="/palette-generator.html">Palette generator</a> 
+  <a href="/color-blindness.html">Color blindness</a>
+  <a href="/asphalt-calculator.html">Asphalt calculator</a> 
+  <a href="/keyword-density.html">Keyword density</a>
+  <a href="/meta-tag.html">Meta tag generator</a>
+  <a href="/word-counter.html">Word counter</a> 
+  <a href="/qr-code.html">QR code Generator</a>
+  <a href="/barcode-generator.html">Barcode generator</a>
+  <a href="/uuid-generator.html">Uuid generator</a> 
+  <a href="/unit-converter.html">Unit converter</a>
+  <a href="/time-zone.html">Time zone converter</a> 
+   <a href="/password-generator.html">Password generator</a> 
+
+  </div>
+</section>
+</div>
+    <div class="footer-links">
+          <a href="https://multitoosite.com/Contact-Us.html">Contact Us</a>
+          <a href="https://multitoosite.com/privacy-policy.html">Privacy Policy</a>
+          <a href="https://multitoosite.com/terms-and-conditions.html">Terms and Conditions</a>
+         <a href="https://multitoosite.com/Disclaimer.html">Disclaimer</a>
+         <a href="https://multitoosite.com/About-Us.html">About Us</a>
+        </div>
+<script>
+const map = {
+  0:"⁰",1:"¹",2:"²",3:"³",4:"⁴",5:"⁵",6:"⁶",7:"⁷",8:"⁸",9:"⁹",
+  a:"ᵃ", b:"ᵇ", c:"ᶜ", d:"ᵈ", e:"ᵉ", f:"ᶠ", g:"ᵍ", h:"ʰ",
+  i:"ⁱ", j:"ʲ", k:"ᵏ", l:"ˡ", m:"ᵐ", n:"ⁿ", o:"ᵒ",
+  p:"ᵖ", r:"ʳ", s:"ˢ", t:"ᵗ", u:"ᵘ", v:"ᵛ", w:"ʷ",
+  x:"ˣ", y:"ʸ", z:"ᶻ",
+  "+":"⁺","-":"⁻","=":"⁼","(":"⁽",")":"⁾"
+};
+
+function convertText(){
+  const input = document.getElementById("inputText").value;
+  let output = "";
+
+  for(let char of input){
+    output += map[char.toLowerCase()] || char;
+  }
+
+  document.getElementById("outputText").value = output;
+}
+</script>
 
 </body>
 </html>
