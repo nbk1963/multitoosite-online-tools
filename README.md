@@ -15,7 +15,7 @@ Multitoosite is a collection of free online tools designed to help users with da
 ## Asphalt Calculator
 Convert normal text into superscript format for math, science, and social media.
 
-🔗 Live Tool: https://multitoosite.com/asphalt-calculator
+🔗 Live Tool: https://multitoosite.com/asphalt-calculator.html
 
 ## Why Multitoosite?
 - Free to use
