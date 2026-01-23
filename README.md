@@ -12,10 +12,10 @@ Multitoosite is a collection of free online tools designed to help users with da
 - Square Footage Calculator
 - Text Utilities & Converters
 
-## Superscript Generator
+## Asphalt Calculator
 Convert normal text into superscript format for math, science, and social media.
 
-🔗 Live Tool: https://multitoosite.com/superscript-generator
+🔗 Live Tool: https://multitoosite.com/asphalt-calculator
 
 ## Why Multitoosite?
 - Free to use
