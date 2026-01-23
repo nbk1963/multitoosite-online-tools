@@ -1,26 +1,27 @@
-# Free Online Tools Collection
+# Multitoosite – Free Online Tools & Calculators
 
-A curated list of useful online tools for students, developers, and content creators.
+Multitoosite is a collection of free online tools designed to help users with daily calculations and text formatting tasks.
 
-## 🔹 Superscript Generator
-Convert normal text into superscript instantly.
-👉 https://multitoosite.com/superscript-generator.html
+🌐 Official Website: https://multitoosite.com
 
-## 🔹 Password Generator
-Create strong and secure passwords online.
-👉 https://multitoosite.com/password-generator.html
+## Available Tools
+- Superscript Generator
+- Asphalt Calculator
+- Concrete Calculator
+- Gravel Calculator
+- Square Footage Calculator
+- Text Utilities & Converters
 
-## 🔹 Image Compression Tool
-Compress images without losing quality.
-👉 https://multitoosite.com/image-compressor.html
+## Superscript Generator
+Convert normal text into superscript format for math, science, and social media.
 
-## 🌐 Main Website
-Explore more free tools:
-👉 https://multitoosite.com
+🔗 Live Tool: https://multitoosite.com/superscript-generator
 
-# multitoosite
-this is a multitoosite.com web site
-## Image Compressor Tool
-Free online image compressor to reduce image size without quality loss.
+## Why Multitoosite?
+- Free to use
+- No signup required
+- Mobile friendly
+- Fast & lightweight
 
-👉 https://www.multitoosite.com/image-compressor.html
+## License
+This project is for educational and informational purposes.
